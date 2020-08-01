@@ -19,8 +19,12 @@ body {
   width: 400px;
 }
 
-/* .welcome_form {
-} */
+.welcome_form p{
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
 
 .welcome_form input,
 .welcome_form button {
@@ -34,8 +38,10 @@ body {
   font-size: 30px;
   text-align: center;
   border: none;
-  border-bottom: 1px solid #fff;
+  border: 2px solid #fff;
   margin-bottom: 15px;
+  border-radius: 100px;
+  padding: 5px;
 }
 
 .welcome_form input:focus {
@@ -49,7 +55,7 @@ body {
   background-color: #fff;
   color: #7536C0;
   font-size: 22px;
-  transition: 0.4s all;
+  transition: 0.3s all;
 }
 
 .welcome_form button:hover {

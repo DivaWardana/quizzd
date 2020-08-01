@@ -14,7 +14,7 @@ let questions = [
   },
   {
     id: 2,
-    // hasil dari penjumlahan binner
+    // hasil dari penjumlahan binner lalu konversi ke oktal
     question: "Berapakah hasil dari 10 + 10 ?",
     answer: "4",
     options: [
@@ -44,7 +44,7 @@ let questions = [
     options: [
       "Sejenis Ular",
       "Sangat jelas itu adalah ular",
-      "Bahas Pemrograman",
+      "Bahasa Pemrograman",
       "Salah satu bahas pemrograman"
     ]
   },
@@ -72,16 +72,16 @@ window.onload = function() {
 function next() {
 
    
-  // if the question is last then redirect to final page
+  // jika pertanyaan sudah terakhir maka akan di redirect ke end.html
   if (question_count == questions.length - 1) {
     sessionStorage.setItem("time", time);
     clearInterval(mytime);
-    location.href = "end.html";
+    location.href = "selesai.html";
   }
   console.log(question_count);
 
   let user_answer = document.querySelector("li.option.active").innerHTML;
-  // check if the answer is right or wrong
+  // mengecek jawaban benar atau salah
   if (user_answer == questions[question_count].answer) {
     points += 20;
     sessionStorage.setItem("points", points);
