@@ -12,7 +12,7 @@ if (user_points === null) {
 if (user_points2 === null) {
     document.querySelector("span.points2").innerHTML = 0;
 } else {
-    document.querySelector("span.points2").innerHTML = user_points2 + '%';
+    document.querySelector("span.points2").innerHTML = user_points2 ;
 }
 let progress = document.querySelector('#progress-done');
 progress.style.width = user_points + '%';
