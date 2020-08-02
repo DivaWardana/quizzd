@@ -2,61 +2,57 @@
 let questions = [
   {
     id: 1,
-    // hasil penjumlahan binner
-    question: "Berapakah hasil dari 1 + 1 ?",
-    answer: "10",
+    question: "Siapakah pencipta MYSQL ?",
+    answer: 'Michael "Monty" Widenius',
     options: [
-      "0",
-      "2",
-      "10",
-      "11"
+      "Carles Cabbage",
+      "Howard Akein",
+      "Linus Torvald",
+      'Michael "Monty" Widenius'
     ]
   },
   {
     id: 2,
-    // hasil dari penjumlahan binner lalu konversi ke oktal
-    question: "Berapakah hasil dari 10 + 10 ?",
-    answer: "4",
+    question: "Pengembangan MYSQL dengan tool database UNIREG dibuat oleh?",
+    answer: "E.F Codd",
     options: [
-      "4",
-      "20",
-      "100",
-      "1010"
+      "E.F Codd",
+      "Michael Widenius",
+      "R.F Boyce",
+      "David"
     ]
   },
   {
     id: 3,
-    // sama dengan oktal
-    question: "Angka berapakah yang sama dengan 4 ?",
-    answer: "100",
+    question: "Pesonil yang berhak untuk merubah struktur storage dan strategi akses didalam basis data adalah ?",
+    answer: "DBMS",
     options: [
-      "4",
-      "2+2",
-      "100",
-      "1000"
+      "DBA",
+      "DBMS",
+      "Programmer",
+      "Analyst"
     ]
   },
   {
     id: 4,
-    // karena phyton ada di bahasa pemrograman
-    question: "Menurutmu apakah itu Pyhton ?",
-    answer: "Bahasa Pemrograman",
+    question: "Program enterprise yang dibuat untuk mengaplikasikan basis data oracle adalah ?",
+    answer: "Ulead10.0",
     options: [
-      "Sejenis Ular",
-      "Sangat jelas itu adalah ular",
-      "Bahasa Pemrograman",
-      "Salah satu bahas pemrograman"
+      "Ms.powepoint",
+      "Corel Draw",
+      "Ms.Visual Basic",
+      "Ulead10.0"
     ]
   },
   {
     id: 5,
-    question: "Javascript adalah bahasa pemrograman backend atau frontend ?",
-    answer: "Hybrid",
+    question: "Proses pertukaran informasi dari satu tingkat ke tingkat lainnya dalam arsitektur system basis data disebut ?",
+    answer: "Physical data independence",
     options: [
-      "Backend",
-      "Frontend",
-      "Hybrid",
-      "Backend dan Frontend"
+      "Data independence",
+      "Mapping",
+      "Physical data independence",
+      "Logical data independence"
     ]
   }
 ];
@@ -97,7 +93,7 @@ function show(count) {
   let [first, second, third, fourth] = questions[count].options;
 
   question.innerHTML = `
-  <h2>Q${count + 1}. ${questions[count].question}</h2>
+  <h2><span style="color : #7536C0;">Q${count + 1}.</span> ${questions[count].question}</h2>
    <ul class="option_group">
   <li class="option">${first}</li>
   <li class="option">${second}</li>
@@ -121,3 +117,5 @@ function toggleActive() {
     };
   }
 }
+
+

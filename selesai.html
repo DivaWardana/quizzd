@@ -5,19 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>QUIZZD</title>
+    <link rel="shortcut icon" href="assets/img/icon.png">
     
     <!-- style.css -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div class="wrapper">
-        <div>
-           <i class="fas fa-award award_icon"></i>
-           <h3 class="username">Kerja Bagus! <span class="name"></span></h3>
-           <p class="userpoints">Skor Kamu <span class="points"></span></p>
-         <p class="usertime"> Waktu kamu <span class="time_taken"></span></p>
-        </div>
+            <div class="end">
+                <p>Ringkasan</p>
+                <div class="card">
+                    <div>
+                        <img src="https://cf.quizizz.com/join/img/avatars/tablet_lg/monster32.png" alt="avatar" class="avatar">
+                    </div>
+                    <div  class="username">
+                        <span>Kerja Bagus! <p class="name"></p></span>
+                    </div>
+                    
+                    <!-- <p class="userpoints">Skor Kamu <span class="points"></span></p>
+                    <p class="usertime"> Waktu kamu <span class="time_taken"></span></p> -->
+                </div>
+                <div class="card-accuracy">
+                    <label class="lebel">ketepatan</label>
+                    <div class="progress">
+                        <div id="progress-done" data-done="100">
+                            <span class="points"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="score-time">
+                    <div class="card-score">
+                        <div class="flex-view">
+                            <div class="title-value">
+                                <span class="info-title">Skor</span><br>
+                                <span class="points2" style="font-size: 20px;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-time">
+                        <div class="flex-view">
+                            <div class="title-value">
+                                <span class="info-title">Waktu</span><br>
+                                <span class="time_taken" style="font-size: 20px;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="restart">
+                    <button onclick="submitForm(event)">Mulai Lagi</button>
+                </div>
+                
+            </div>
     </div>
+    <script>
+        
+    </script>
     <script src="https://kit.fontawesome.com/d56261bbb9.js"></script>
 
 

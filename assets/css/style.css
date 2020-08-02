@@ -12,7 +12,7 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: #7536C0;
+  background-color: #461a42;
 }
 
 .welcome_text {
@@ -52,8 +52,8 @@ body {
   padding: 20px 0;
   border: none;
   border-radius: 100px;
-  background-color: #fff;
-  color: #7536C0;
+  background-color: #8854c0;
+  color: #fff;
   font-size: 22px;
   transition: 0.3s all;
 }
@@ -99,7 +99,7 @@ body {
   justify-content: center;
   height: 100%;
   width: 100px;
-  background-color: #7536C0;
+  background-color: #461a42;
   color: #fff;
 }
 .quiz_body {
@@ -125,17 +125,17 @@ body {
 .option:hover {
   cursor: pointer;
   /* background-color: rgba(255, 255, 255, 0.1); */
-  border: 2px solid #7536C0;
-  color: #7536C0;
+  border: 2px solid #8854c0;
+  color: #8854c0;
 }
 .option.active {
-  background-color: #7536C0;
+  background-color: #8854c0;
   color: #fff;
 }
 .btn-next {
   border: none;
   padding: 15px 35px;
-  background-color: #7536C0;
+  background-color: #8854c0;
   color: #fff;
   border-radius: 27px;
   transition: 0.4s all;
@@ -144,20 +144,173 @@ body {
 .btn-next:hover {
   cursor: pointer;
   background-color: #fff;
-  color: #7536C0;
+  color: #8854c0;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
-.award_icon {
-  display: block;
-  font-size: 300px;
-  color: #fff;
+.avatar {
+  height: 80px;
+  width: 80px;
+  padding-top: 10px;
+  margin-right: 30px;
 }
 
-.username,
+.username{
+  color: #fff;
+  font-size: 1.5em;
+  padding-top: 20px;
+}
 .userpoints,
 .usertime {
   color: #fff;
+  /* text-align: center; */
+  /* margin-top: 15px; */
+  padding-left: 100px;
+}
+
+.end
+{
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 700px;
+  height: 100%;
+}
+
+.end > p
+{
+  color: #fff;
   text-align: center;
-  margin-top: 15px;
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.card
+{
+  display: flex ;
+  margin-left: 10%;
+  margin-bottom: 20px;
+  width: 80%;
+  height: 90px;
+  background-color: #000;
+  /* box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3); */
+  border-radius: 15px;
+}
+
+.card-accuracy
+{
+  display: block ;
+  margin-left: 10%;
+  margin-bottom: 20px;
+  width: 80%;
+  height: 70px;
+  background-color: #000;
+  /* box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3); */
+  border-radius: 15px;
+  padding: 5px 16px 16px;
+}
+.lebel
+{
+    font-weight: 500;
+    font-size: 15px;
+    color: hsla(0,0%,100%,.33);
+}
+
+.content-card
+{
+  color: grey;
+  font-weight: 300;
+}
+
+
+.progress {
+	background-color: red;
+	border-radius: 20px;
+	position: relative;
+	margin: 10px auto;
+	height: 15px;
+  width: 100%;
+ 
+}
+
+#progress-done {
+	background: green;
+	/* box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C; */
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 1s ease 0.3s;
+}
+
+.score-time
+{
+  display: flex;
+  /* justify-content: space-between; */
+}
+.card-score
+{
+  display: block ;
+  margin-left: 9%;
+  margin-bottom: 20px;
+  width: 40%;
+  height: 70px;
+  background-color: #000;
+  /* box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3); */
+  border-radius: 15px;
+  padding: 5px 16px 16px;
+}
+.card-time
+{
+  display: block ;
+  margin-left: 2%;
+  margin-bottom: 20px;
+  width: 40%;
+  height: 70px;
+  background-color: #000;
+  /* box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3); */
+  border-radius: 15px;
+  padding: 5px 16px 16px;
+}
+.flex-view
+{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.title-value
+{
+  justify-content: space-between;
+  align-items: flex-start;
+  font-weight: 500;
+  flex-direction: column;
+  color: white ;
+
+}
+.info-title
+{
+  opacity: 0.33;
+  font-size: 15px;
+}
+
+.restart button {
+  width: 80%;
+  margin-left: 10%;
+  padding: 10px 0;
+  border: none;
+  border-radius: 100px;
+  background-color: #8854c0;
+  color: #fff;
+  font-size: 22px;
+  transition: 0.3s all;
+}
+
+.restart button:hover {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+  cursor: pointer;
 }
