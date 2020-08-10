@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ina">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,13 +12,20 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="welcome_text">
-            <form class="welcome_form" name="welcome_form" onsubmit="submitForm(event)">
-                <p>Siapa nama kamu?</p>
-                <input type="text" name="name" >
-                <button>Mulai Quiz</button>
-            </form>
+        <div class="welcome_card">
+            <div class="welcome_text">
+                <button onclick="generator()">Profil</button>
+                <form class="welcome_form" name="welcome_form" onsubmit="submitForm(event)">
+                    <div id="imgRndm" style="padding-left:150px ;"></div>
+                    <p>Siapa nama kamu?</p>
+                    <input type="text" name="name" id="nama">
+                    <p>Berapa umur kamu?</p>
+                    <input type="text" name="umur" id="umur">
+                    <button>Pilih Kuis </button>
+                </form>
+            </div>
         </div>
+        
     </div>
 
     <!-- site.js -->

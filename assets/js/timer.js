@@ -4,6 +4,7 @@ let seconds = Math.floor((ctime % (1000 * 60))/ 1000);
 let minutes = Math.floor((ctime % (1000 * 60 * 60))/( 1000 * 60));
 console.log(seconds, minutes);
 let time = 0;
+//setInterval
 let mytime = setInterval(function(){
         time++;
         
